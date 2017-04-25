@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import {CoursesComponent} from './courses.component';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: '<h1>Hello World</h1><courses></courses>',
+  directives: [CoursesComponent]
 })
 export class AppComponent {
   title = 'app works!';
